@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Cat Match</title>
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <section class="quiz-section">
+                <div class="quiz-box">
+                    <h1>Cat Match Quiz</h1>
+                    <div class="quiz-header">
+                        <span>Find your perfect cat</span>
+                    </div>
+
+                    <h2 class="question-text">What's your ideal weekend activity?</h2>
+
+                    <div class="option-list">
+                        <div class="option">
+                            <span>A. Relaxing at home with a good book or movie</span>
+                        </div>
+                        <div class="option">
+                            <span>B. Exploring the outdoors, hiking, or going for a walk</span>
+                        </div>
+                        <div class="option">
+                            <span>C. Socializing with friends at a café or event</span>
+                        </div>
+                    </div>
+
+                    <div class="quiz-footer">
+                        <span class="question-total">1 of 5 questions</span>
+                        <button class="next-btn">Next</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="home">
+                <div class="home-content">
+                    <h1>Cat Match</h1>
+                    <h3>Each cat breed is completely different, ranging from personality, size, and looks. This means finding a cat that suits you is crucial for a healthy relationship between you and your feline friend.</h3>
+                    <button class="start-button"><h2>Find your match</h2></button>
+                </div>
+            </section>
+
+            <section class="results-section">
+                <div class="results-box">
+                    <h1>Your Perfect Cat Breed</h1>
+                    <p id="result-message">Based on your answers, the perfect cat breed for you is...</p>
+                    <button class="restart-btn">Restart Quiz</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div class="popup-info">
+        <h2>Quiz Guide</h2>
+        <span class="info">1.Answer as honestly as possible</span>
+        <span class="info">2.Thats it!</span>
+
+        <div class="btn-group">
+            <button class="info-btn exit-btn">Exit Quiz</button>
+            <a href="#" class="info-btn continue-btn">Continue</a>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+</body>
+</html>
