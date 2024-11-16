@@ -1,22 +1,25 @@
+*{
+    font-family: Inter;
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Poppins';
-    background: rgb(210, 161, 255);
+    font-family: Inter;
     overflow: hidden;
 }
 
 button:hover {
     cursor: pointer;
-    transition: .5s;
+    
 }
 
 h3 {
-    font-weight: 300;
-    margin-top: 0px;
+    
 }
 
 main {
     min-height: 100vh;
-    background-color: rgb(210, 161, 255);
+    
     transition: .3s ease;
     pointer-events: auto;
 }
@@ -43,31 +46,73 @@ main {
 }
 
 .home-content {
-    max-width: 600px;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
 }
 
 .home-content h1 {
-    font-size: 78px;
+    font-size: 100px;
     font-weight: 700;
     margin: auto;
 }
 
+.home-content h3 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: auto;
+    float: left;
+    line-height: 0.1;
+}
+
+
+
+.home-content .click-me {
+    padding-left: 400px;
+    
+}
+
 .home-content .start-button {
+    font-weight: 600;
+    font-size: 23px;
     width: 190px;
     height: 70px;
-    background: rgb(255, 255, 135);
+    background: white;
     border-radius: 70px;
-    border-style: solid;
-    border-color: black;
+    border: 1px none rgba(85, 85, 85, 0.5);
     transition: .5s;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.home-content .cat-face {
+    position: absolute;
+    z-index: 10;
+    padding-top: 2px;
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    /* rotate: 7deg; */
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.home-content .cat-face-two {
+    padding-top: 2px;
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    /* rotate: 7deg; */
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 .home-content .start-button:hover {
     cursor: pointer;
-    transform: translatey(-5px);
-    box-shadow: 0px 6px;
-    background: white;
+    background: rgba(0, 0, 0, 0.1);
     transition: .5s;
+    .cat-face { display: none;};
 }
 
 .popup-info {
@@ -76,7 +121,8 @@ main {
     left: 50%;
     transform: translate(-50%,-50%) scale(.9);
     width: 600px;
-    background: rgb(255, 255, 135);
+    background: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 20px;
     padding: 10px;
     opacity: 0;
@@ -92,15 +138,22 @@ main {
 
 .popup-info h2 {
     font-size: 50px;
+    text-align: center;
+}
+
+.info-group {
+    display: inline-block;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 40px;
 }
 
 .popup-info .info {
-    display: inline-block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
     font-weight: 500;
-    margin: 4px 0;
-    border-top: 1px solid #999;
-    margin-top: 10px;
-    padding: 15px 0 7px;
 }
 
 .popup-info .btn-group {
@@ -115,7 +168,7 @@ main {
     align-items: center;
     width: 130px;
     height: 45px;
-    background: rgb(210, 161, 255);
+    background: white;
     border-radius: 45px;
     text-decoration: none;
     font-size: 16px;
@@ -127,7 +180,7 @@ main {
 
 .popup-info .btn-group .info-btn:nth-child(1) {
     background: transparent;
-    color: rgb(149, 36, 255);
+    color: black;
 }
 
 .popup-info .btn-group .info-btn:nth-child(1):hover {
@@ -143,9 +196,9 @@ main {
 
 .quiz-section {
     position: relative;
-    left: -50%;
+    left: -51%;
     width: 100%;
-    background: rgb(255, 255, 135);
+    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -202,7 +255,7 @@ main {
 }
 
 .quiz-header .header-score {
-    background: rgb(210, 161, 255);
+    background: white;
     border-radius: 3px;
     padding: 7px;
 }
@@ -230,7 +283,7 @@ main {
 }
 
 .option-list .option.selected {
-    background-color: rgba(149, 36, 255, 0.3);
+    background-color: rgba(124, 124, 124, 0.3);
     transition: .3s;
 }
 
@@ -248,7 +301,7 @@ main {
 }
 
 .quiz-footer .next-btn {
-    background: rgb(210, 161, 255);
+    background: white;
     border-radius: 45px;
     height: 45px;
     width: 130px;
@@ -269,7 +322,7 @@ main {
     position: absolute;
     left: -50%;
     width: 100%;
-    background: rgb(255, 255, 135);
+    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -296,6 +349,11 @@ main {
     flex-direction: column;
     padding: 20px 30px;
     text-align: center;
+}
+
+.results-box.active {
+    opacity: 1;
+    z-index: 3;
 }
 
 .results-box h1 {

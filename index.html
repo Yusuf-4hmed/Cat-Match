@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        </style>
     <title>Cat Match</title>
 </head>
 <body>
@@ -14,25 +16,25 @@
                 <div class="quiz-box">
                     <h1>Cat Match Quiz</h1>
                     <div class="quiz-header">
-                        <span>Find your perfect cat</span>
+                        <p>Find your perfect cat</p>
                     </div>
 
                     <h2 class="question-text">What's your ideal weekend activity?</h2>
 
                     <div class="option-list">
                         <div class="option">
-                            <span>A. Relaxing at home with a good book or movie</span>
+                            <p>A. Relaxing at home with a good book or movie</p>
                         </div>
                         <div class="option">
-                            <span>B. Exploring the outdoors, hiking, or going for a walk</span>
+                            <p>B. Exploring the outdoors, hiking, or going for a walk</p>
                         </div>
                         <div class="option">
-                            <span>C. Socializing with friends at a café or event</span>
+                            <p>C. Socializing with friends at a café or event</p>
                         </div>
                     </div>
 
                     <div class="quiz-footer">
-                        <span class="question-total">1 of 5 questions</span>
+                        <p class="question-total">1 of 5 questions</p>
                         <button class="next-btn">Next</button>
                     </div>
                 </div>
@@ -40,9 +42,12 @@
 
             <section class="home">
                 <div class="home-content">
-                    <h1>Cat Match</h1>
-                    <h3>Each cat breed is completely different, ranging from personality, size, and looks. This means finding a cat that suits you is crucial for a healthy relationship between you and your feline friend.</h3>
-                    <button class="start-button"><h2>Find your match</h2></button>
+                    <h1>Cat Match </h1>
+                    <h3>Pairing people to cats.</h3>
+                    <button class="start-button">
+                        <img class="cat-face" src="https://em-content.zobj.net/source/apple/118/smiling-cat-face-with-open-mouth_1f63a.png" loading="lazy" alt="iOS 11.2" class="w-auto h-full">
+                        <img  class="cat-face-two" src="https://em-content.zobj.net/source/apple/118/grinning-cat-face-with-smiling-eyes_1f638.png" loading="lazy" alt="iOS 11.2" class="w-auto h-full">
+                    </button>
                 </div>
             </section>
 
@@ -58,9 +63,11 @@
 
     <div class="popup-info">
         <h2>Quiz Guide</h2>
-        <span class="info">1.Answer as honestly as possible</span>
-        <span class="info">2.Thats it!</span>
-
+    <div class="info-group">
+        <p class="info">1. Try to be as accurate as possible</p>
+        <p class="info">2. If an option doesn't suit you pick the closest!</p>
+        <p class="info">3. Just think about who you are</p>
+    </div>
         <div class="btn-group">
             <button class="info-btn exit-btn">Exit Quiz</button>
             <a href="#" class="info-btn continue-btn">Continue</a>

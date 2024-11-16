@@ -1,12 +1,8 @@
+//basic questions for the user
 let questions = [
     {
         numb: 1,
         question: "What's your ideal weekend activity?",
-        answers: [
-            "A. Relaxing at home with a good book or movie",
-            "B. Exploring the outdoors, hiking, or going for a walk",
-            "C. Socializing with friends at a café or event"
-        ],
         options: [
             { text: "A. Relaxing at home with a good book or movie", type: 'calm' },
             { text: "B. Exploring the outdoors, hiking, or going for a walk", type: 'energetic' },
@@ -16,11 +12,6 @@ let questions = [
     {
         numb: 2,
         question: "How do you prefer to spend your weekday evenings?",
-        answers: [
-            "A. Relaxing with a good meal and some quiet time",
-            "B. Going to the gym or doing something active",
-            "C. Spending time with family or loved ones"
-        ],
         options: [
             { text: "A. Relaxing with a good meal and some quiet time", type: 'calm' },
             { text: "B. Going to the gym or doing something active", type: 'energetic' },
@@ -30,11 +21,6 @@ let questions = [
     {
         numb: 3,
         question: "How do you handle new situations or challenges?",
-        answers: [
-            "A. I take a step back and assess things carefully",
-            "B. I jump right in and tackle it head-on",
-            "C. I seek advice from friends and make a collaborative decision"
-        ],
         options: [
             { text: "A. I take a step back and assess things carefully", type: 'calm' },
             { text: "B. I jump right in and tackle it head-on", type: 'energetic' },
@@ -44,11 +30,6 @@ let questions = [
     {
         numb: 4,
         question: "Which type of environment makes you feel most comfortable?",
-        answers: [
-            "A. A peaceful and quiet space",
-            "B. A dynamic and changing environment",
-            "C. A warm and friendly atmosphere"
-        ],
         options: [
             { text: "A. A peaceful and quiet space", type: 'calm' },
             { text: "B. A dynamic and changing environment", type: 'energetic' },
@@ -58,11 +39,6 @@ let questions = [
     {
         numb: 5,
         question: "Which of these best describes your work style?",
-        answers: [
-            "A. Methodical and organized",
-            "B. Fast-paced and goal-oriented",
-            "C. Collaborative and team-focused"
-        ],
         options: [
             { text: "A. Methodical and organized", type: 'calm' },
             { text: "B. Fast-paced and goal-oriented", type: 'energetic' },
@@ -71,7 +47,7 @@ let questions = [
     }
     
 ];
-
+//score for cat
 let score = {
     calm: 0,
     energetic: 0,
@@ -170,7 +146,8 @@ function showResult() {
         default:
             resultMessage = "It's hard to pick a breed, but all cats are wonderful!";
     }
-
-    alert(resultMessage);  // You can replace this with a nicer UI element
+    alert(resultMessage)
+    document.querySelector('.results-box').classList.add('active');
 
 }
+
