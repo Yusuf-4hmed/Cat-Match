@@ -146,8 +146,9 @@ function showResult() {
         default:
             resultMessage = "It's hard to pick a breed, but all cats are wonderful!";
     }
-    alert(resultMessage)
-    document.querySelector('.results-box').classList.add('active');
+    document.querySelector('.quiz-section').classList.remove('active');
+    document.querySelector('.results-section').classList.add('active');
+    document.querySelector('#result-message').textContent = resultMessage
 
+    confetti()
 }
-
