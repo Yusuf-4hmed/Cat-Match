@@ -78,6 +78,7 @@ document.querySelector('.continue-btn').onclick = () => {
     questionCounter(1);
 };
 
+
 document.querySelector('.next-btn').onclick = () => {
     if (questionCount < questions.length - 1) {
         questionCount++;
