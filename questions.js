@@ -79,7 +79,10 @@ document.querySelector('.continue-btn').onclick = () => {
 };
 
 
+
+
 document.querySelector('.next-btn').onclick = () => {
+    const options = document.querySelectorAll('.option');
     if (questionCount < questions.length - 1) {
         questionCount++;
         showQuestions(questionCount);
@@ -102,6 +105,20 @@ function showQuestions(index) {
     });
 
     document.querySelector('.option-list').innerHTML = optionTag;
+
+    function updateNextBtnState() {
+      if (document.querySelector('.option.selected')) {
+        document.querySelector('.next-btn').disabled = false;
+      } else {
+        document.querySelector('.next-btn').disabled = true;
+      }
+    }
+
+    updateNextBtnState();
+
+    document.querySelector('.option-list').addEventListener('click', () => {
+      updateNextBtnState();
+    });
 }
 
 function optionSelected(answerElement, type) {
