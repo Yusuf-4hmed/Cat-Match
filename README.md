@@ -6,7 +6,7 @@
   </p>
 </div>
 
-<a href="https://yusuf-4hmed.github.io/Simple-Weather-App/](https://yusufahmed.info](https://yusuf-4hmed.github.io/Cat-Match/#">Site Link</a>
+<a href="https://yusuf-4hmed.github.io/Cat-Match/#">Site Link</a>
 
 This project's main objective is to allow people to find their perfect cat breed. It is currently in it's early stages but there are plans to add more features.
 
