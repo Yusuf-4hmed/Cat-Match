@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    </style>
+    <title>Cat For Me</title>
+</head>
+<body>
+    <div class="main">
+        <div class="main-title">
+            <h2>What's the perfect</h2>
+                <div class="main-title-second">
+                    <h1>Cat for me</h1>
+                    <h3>?</h3>
+                </div>
+        </div>
+        <button class="start-btn" id="start-btn" onclick="start()">Good question, Lets find out</button>
+    </div>
+    
+    <div class="quiz-info-card" id="quiz-info-card">
+        <h2>Here are some things to keep in mind before you take this quiz:</h2>
+        <div class="info">
+                <ul>
+                    <li>
+                        <h3>Be Honest With Your Answers</h3>
+                        Please answer as true to yourself as possible
+                    </li>
+                    <li>
+                        <h3>It's all about you</h3>
+                        Take your time there is no need to rush!
+                    </li>
+                    <li>
+                        <h3>Remember results are for fun</h3>
+                        While the quiz is designed for fun it can be insightful
+                    </li>
+                    <br>
+                    <li>(also im still working on this site :p)</li>
+                </ul>
+        </div>
+        <div class="info-buttons">
+            <button class="nostart-btn" id="nostart-btn" onclick="noStart()">Take me back to home</button>
+            <button class="start-quiz-btn" id="start-quiz-btn" onclick="enterQuiz()">Okay lets start!</button>
+        </div>
+        
+    </div>
+
+    <div class="quiz-card" id="quiz-card">
+        <div class="quiz">
+            <h2 class="question-header" id="question-header">Question Placeholder</h2>
+                <div class="options" id="options">
+                    <div class="option">option placeholder</div>
+                    <div class="option">option placeholder</div>
+                    <div class="option">option placeholder</div>
+                </div>
+                
+        </div>
+        <div class="quiz-buttons">
+            <button class="back-btn" id="back-btn">Back</button>
+            <button class="next-btn disabled" id="next-btn" onclick="nextQuestion()">Next</button>
+        </div>
+    </div>
+
+    <div class="results-card" id="results-card">
+    
+    </div>
+</body>
+    <script src="main.js"></script>
+    
+</html>
