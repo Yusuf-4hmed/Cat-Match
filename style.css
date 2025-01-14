@@ -2,6 +2,7 @@
     font-family: Inter;
 }
 
+
 /* MAIN */
 
 .main-title{
@@ -91,11 +92,13 @@
 
 .info-buttons{
     display: flex;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .nostart-btn{
     display: block;
-    margin-left: auto;
     margin-right: auto;
     margin-top: 17px;
     
@@ -111,7 +114,6 @@
 .start-quiz-btn{
     display: block;
     margin-left: auto;
-    margin-right: auto;
     margin-top: 17px;
     
     width: 130px;
@@ -175,11 +177,13 @@
 
 .quiz-buttons{
     display: flex;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .back-btn{
     display: block;
-    margin-left: auto;
     margin-right: auto;
     margin-top: 17px;
     
@@ -195,7 +199,6 @@
 .next-btn{
     display: block;
     margin-left: auto;
-    margin-right: auto;
     margin-top: 17px;
     
     width: 130px;
@@ -229,4 +232,34 @@
 
 .results-card.active{
     display: initial;
+}
+
+.results{
+    margin-top: 150px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.results-header{
+    display: flex;
+    
+}
+
+.cat-pic-container{
+    border: 1px solid black;
+    width: 175px;
+    height: 175px;
+    border-radius: 10px;
+}
+
+.cat-pic{
+    
+    width: 200px;
+    height: 200px;
+}
+
+.cat-name{
+    font-size: 50px;
+    margin-left: 10px;
 }

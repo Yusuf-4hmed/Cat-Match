@@ -6,13 +6,17 @@ const nextBtn = document.getElementById("next-btn");
 // CARDS
 const quizInfoCard = document.getElementById("quiz-info-card");
 const quizCard = document.getElementById("quiz-card");
+
 const resultsCard = document.getElementById("results-card");
+    const catName = document.getElementById("cat-name");
+    const catDesc = document.getElementById("cat-description");
 // OPTIONS
 const options = document.getElementsByClassName("option");
 
 const optionOne = document.querySelector(".options div:nth-child(1)");
 const optionTwo = document.querySelector(".options div:nth-child(2)");
 const optionThree = document.querySelector(".options div:nth-child(3)");
+
 
 const questionHeader = document.getElementById("question-header");
 
@@ -53,6 +57,15 @@ let questions = [
             {text: "C. I seek advice from friends and make a collaborative decision", type: "affectionate"}
         ]
     },
+    {
+        number: 4,
+        question: "Where do you like to go?",
+        options: [
+            {text: "A. In my bed", type: "calm"},
+            {text: "B. Travelling the world", type: "energetic"},
+            {text: "C. Anywhere as long as I'm with my friends", type: "affectionate"}
+        ]
+    },
 ]
 
 let score = {
@@ -66,22 +79,28 @@ let match = [
         breed: "Birman",
         description: "BMN Desc..",
         why: "you were matched with BMN because..",
-        type: "calm"
+        type: "calm",
+        img: "img"
     },
     {
         breed: "Orange Tabby",
         description: "ORNG TAB Desc..",
         why: "you were matched with ORNG TAB because..",
-        type: "energetic"
+        type: "energetic",
+        img: "img"
     },
     {
         breed: "British Shorthair",
         description: "BR SH Desc..",
         why: "you were matched with BR SH because..",
-        type: "affectionate"
-    }
+        type: "affectionate",
+        img: "img"
+    },
+        
 ]
 
+fetch("https://api.thecatapi.com/v1/images/search?limit=10&breed_ids=beng&api_key=live_zD282jAU3lwE2CldZLy6MHNh7jUMZlPEviuaPz5P2Ul8SXqIETQM1ZBzFXh1Umwo")
+.then(res => console.log(res))
 let question = 0;
 
 // LET THE QUIZ BEGIN HEHE
@@ -129,26 +148,32 @@ const saveScore = () => {
 }
 
 // ALLOWS NEXT BUTTON IF OPTION IS SELECTED
+
+nextBtn.disabled = true;
  
 optionOne.addEventListener("click", () => {
     nextBtn.classList.remove("disabled");
+    nextBtn.disabled = false;
 })
 optionTwo.addEventListener("click", () => {
     nextBtn.classList.remove("disabled");
+    nextBtn.disabled = false;
 })
 optionThree.addEventListener("click", () => {
     nextBtn.classList.remove("disabled");
+    nextBtn.disabled = false;
 })
 
 // NEXT QUESTION
 
 const nextQuestion = () => { 
     saveScore();
-    if (question < 2){    
+    if (question < 3){    
         question++;
         optionOne.classList.remove("selected");
         optionTwo.classList.remove("selected");
         optionThree.classList.remove("selected");
+        nextBtn.disabled = true;
         nextBtn.classList.add("disabled");
         questionHeader.innerHTML = `${questions[question].question}`;
         optionOne.innerHTML = `${questions[question].options[0].text}`;
@@ -156,20 +181,20 @@ const nextQuestion = () => {
         optionThree.innerHTML = `${questions[question].options[2].text}`;
     } else {
         resultsCard.classList.add("active");
-        if (score.calm > score.energetic && score.affectionate){
-            alert(`The perfect cat for you is ${match[0].breed}`)
-        } else if (score.energetic > score.calm && score.affectionate) {
-            alert(`The perfect cat for you is ${match[1].breed}`)
-        } else if (score.affectionate > score.calm && score.energetic){
-            alert(`The perfect cat for you is ${match[2].breed}`)
+        // RESULTS
+        if (score.calm > score.energetic && score.calm > score.affectionate){
+            catName.innerText = `${match[0].breed}`;
+            catDesc.innerText = `${match[0].description}`;
+        } else if (score.energetic > score.calm && score.energetic > score.affectionate) {
+            catName.innerText = `${match[1].breed}`;
+            catDesc.innerText = `${match[1].description}`;
+        } else if (score.affectionate > score.calm && score.affectionate > score.energetic){
+            catName.innerText = `${match[2].breed}`;
+            catDesc.innerText = `${match[2].description}`;
         }
     }
 }
 
 // RESULTS CARD
-resultsCard.classList.contains("active")
 
-if (score.calm > score.energetic && score.affectionate){
-    alert(`The perfect cat for you is ${match.breed}`)
-}
 
