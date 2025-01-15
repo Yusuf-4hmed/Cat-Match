@@ -1,5 +1,5 @@
 *{
-    font-family: Inter;
+    font-family: "Dongle";
 }
 
 
@@ -15,8 +15,9 @@
 }
 
 .main-title h2{
-    font-size: 35px;
+    font-size: 70px;
     margin-bottom: 7px;
+    cursor: default;
 }
 
 .main-title-second{
@@ -29,13 +30,15 @@
 }
 
 .main-title-second h1{
-    font-size: 70px;
+    font-size: 130px;
+    cursor: default;
 }
 
 .main-title-second h3{
-    font-size: 90px;
+    font-size: 110px;
     transform: rotate(20deg);
     margin-left: 7px;
+    cursor: default;
 }
 
 /* MAIN, START BUTTON */
@@ -46,12 +49,21 @@
     margin-right: auto;
     margin-top: 17px;
     
-    width: 130px;
-    height: 40px;
+    background-color: #fdcd5e;
+    border: 3px solid #fdb833;
+    box-shadow: 0px 5px #fdb833;
+    color: white;
+    font-size: 37px;
+    font-weight: 700;
+    
+    width: 175px;
+    height: 55px;
     border-radius: 10px;
 }
 .start-btn:hover{
     cursor: pointer;
+    transform: translateY(3px);
+    box-shadow: 0px 0px;
 }
 
 /* QUIZ INFO CARD */
@@ -76,53 +88,91 @@
     text-align: center;
 }
 
+/* QUIZ INFO CARD, INFO CONTAINER */
+
+.info-container{
+    margin-left: auto;
+    margin-right: auto;
+    
+    max-width: 630px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    
+    
+    
+}
+
+.info-container h2{
+    font-size: 50px;
+    line-height: 0.7;
+    padding-top: 25px;
+}
+
 /* QUIZ INFO CARD, INFO */
 
 .info{
-    max-width: 350px;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .info li{
     list-style: none;
+    line-height: 0.7;
+    font-size: 30px;
 }
 
 /* QUIZ INFO CARD, BUTTONS */
 
 .info-buttons{
     display: flex;
-    width: 600px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .nostart-btn{
-    display: block;
     margin-right: auto;
     margin-top: 17px;
     
-    width: 130px;
-    height: 40px;
+    background-color: #fdcd5e;
+    border: 3px solid #fdb833;
+    box-shadow: 0px 5px #fdb833;
+    color: white;
+    font-size: 37px;
+    font-weight: 700;
+    
+    width: 175px;
+    height: 55px;
     border-radius: 10px;
 }
 
 .nostart-btn:hover{
     cursor: pointer;
+    transform: translateY(3px);
+    box-shadow: 0px 0px;
 }
 
 .start-quiz-btn{
-    display: block;
     margin-left: auto;
     margin-top: 17px;
     
-    width: 130px;
-    height: 40px;
+    background-color: #fdcd5e;
+    border: 3px solid #fdb833;
+    box-shadow: 0px 5px #fdb833;
+    color: white;
+    font-size: 37px;
+    font-weight: 700;
+    
+    width: 175px;
+    height: 55px;
     border-radius: 10px;
 }
 
 .start-quiz-btn:hover{
     cursor: pointer;
+    transform: translateY(3px);
+    box-shadow: 0px 0px;
 }
 
 /* QUIZ CARD*/
@@ -150,13 +200,15 @@
     margin-top: 200px;
 }
 .question-header{
+    font-size: 50px;
     margin-top: 200px;
     text-align: center;
 }
 
 .option{
+    font-size: 30px;
     border: 1px solid grey;
-    width: 600px;
+    max-width: 600px;
     border-radius: 5px;
     margin-left: auto;
     margin-right: auto;
@@ -165,25 +217,25 @@
 }
 
 .option:hover{
-    background-color: rgb(172, 172, 172);
+    background-color: #fff75e5f;
     cursor: pointer;
 }
 
 .option.selected{
-    background-color: rgba(0, 132, 255, 0.446);
+    background-color: #fdb833;
 }
 
 /* QUIZ CARD, QUIZ BUTTONS */
 
 .quiz-buttons{
     display: flex;
-    width: 600px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .back-btn{
-    display: block;
+    display: none;
     margin-right: auto;
     margin-top: 17px;
     
@@ -197,18 +249,25 @@
 }
 
 .next-btn{
-    display: block;
     margin-left: auto;
     margin-top: 17px;
     
-    width: 130px;
-    height: 40px;
+    background-color: #fdcd5e;
+    border: 3px solid #fdb833;
+    box-shadow: 0px 5px #fdb833;
+    color: white;
+    font-size: 37px;
+    font-weight: 700;
+    
+    width: 175px;
+    height: 55px;
     border-radius: 10px;
 }
 
 .next-btn:hover{
     cursor: pointer;
-    background-color: rgb(172, 172, 172);
+    transform: translateY(3px);
+    box-shadow: 0px 0px;
 }
 
 .next-btn.disabled{
