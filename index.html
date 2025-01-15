@@ -1,84 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dongle&display=swap"
+      rel="stylesheet"
+    />
     <title>Cat For Me</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main">
-        <div class="main-title">
-            <h2>What's the perfect</h2>
-                <div class="main-title-second">
-                    <h1>Cat for me</h1>
-                    <h3>?</h3>
-                </div>
+      <div class="main-title">
+        <h2>What's the perfect</h2>
+        <div class="main-title-second">
+          <h1>Cat for me</h1>
+          <h3>?</h3>
         </div>
-        <button class="start-btn" id="start-btn" onclick="start()">Let's find out</button>
+      </div>
+      <button class="start-btn" id="start-btn" onclick="start()">
+        Let's find out
+      </button>
     </div>
-    
+
     <div class="quiz-info-card" id="quiz-info-card">
-        <div class="info-container">
-            <h2>Here are some things to keep in mind before you take this quiz:</h2>
-            <div class="info">
-                    <ul>
-                        <li>
-                            <h3>Be Honest With Your Answers</h3>
-                            Please answer as true to yourself as possible
-                        </li>
-                        <li>
-                            <h3>It's all about you</h3>
-                            Take your time there is no need to rush!
-                        </li>
-                        <li>
-                            <h3>Remember results are for fun</h3>
-                            While the quiz is designed for fun it can be insightful
-                        </li>
-                        <br>
-                        <li>(also im still working on this site :p)</li>
-                    </ul>
-            </div>
-        
-            <div class="info-buttons">
-                <button class="nostart-btn" id="nostart-btn" onclick="noStart()">Take me back</button>
-                <button class="start-quiz-btn" id="start-quiz-btn" onclick="enterQuiz()">Start!</button>
-            </div>
+      <div class="info-container">
+        <h2>Here are some things to keep in mind before you take this quiz:</h2>
+        <div class="info">
+          <ul>
+            <li>
+              <h3>Be Honest With Your Answers</h3>
+              Please answer as true to yourself as possible
+            </li>
+            <li>
+              <h3>It's all about you</h3>
+              Take your time there is no need to rush!
+            </li>
+            <li>
+              <h3>Remember results are for fun</h3>
+              While the quiz is designed for fun it can be insightful
+            </li>
+            <br />
+            <li>(also im still working on this site :p)</li>
+          </ul>
         </div>
+
+        <div class="info-buttons">
+          <button class="nostart-btn" id="nostart-btn" onclick="noStart()">
+            Take me back
+          </button>
+          <button
+            class="start-quiz-btn"
+            id="start-quiz-btn"
+            onclick="enterQuiz()"
+          >
+            Start!
+          </button>
+        </div>
+      </div>
     </div>
 
     <div class="quiz-card" id="quiz-card">
-        <div class="quiz">
-            <h2 class="question-header" id="question-header">Question Placeholder</h2>
-                <div class="options" id="options">
-                    <div class="option">option placeholder</div>
-                    <div class="option">option placeholder</div>
-                    <div class="option">option placeholder</div>
-                </div>
-                
+      <div class="quiz">
+        <h2 class="question-header" id="question-header">
+          Question Placeholder
+        </h2>
+        <div class="options" id="options">
+          <div class="option">option placeholder</div>
+          <div class="option">option placeholder</div>
+          <div class="option">option placeholder</div>
         </div>
-        <div class="quiz-buttons">
-            <button class="back-btn" id="back-btn">Back</button>
-            <button class="next-btn disabled" id="next-btn" onclick="nextQuestion()">Next</button>
-        </div>
+      </div>
+      <div class="quiz-buttons">
+        <button class="back-btn" id="back-btn">Back</button>
+        <button
+          class="next-btn disabled"
+          id="next-btn"
+          onclick="nextQuestion()"
+        >
+          Next
+        </button>
+      </div>
     </div>
 
     <div class="results-card" id="results-card">
-        <div class="results">
-            <h2>Your cat match is...</h2>
-            <div class="results-header">
-                <div class="cat-pic-container"></div>
-                <img class="cat-pic" src="" alt="">
-                
-                <h2 class="cat-name" id="cat-name">name placeholder</h2>
-            </div>
-            <p class="cat-description" id="cat-description"> Description placeholder Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, ipsa non deserunt, perferendis fugit quibusdam ad sunt assumenda id et iure impedit ipsam placeat hic nam ab, minima vero quasi repudiandae illum quam unde. Reiciendis harum, vero assumenda quasi veritatis, dolores impedit voluptatem corrupti doloremque sed dignissimos, nemo repudiandae iste quibusdam. Quod quos aperiam, placeat vel harum quia eligendi possimus eaque pariatur impedit iure earum dolorum fugit molestiae deserunt nulla unde tenetur ea corporis doloremque modi itaque. Veritatis, animi temporibus tenetur praesentium, facilis assumenda quisquam delectus ullam totam optio odit aut voluptate, quam accusantium ab recusandae deleniti enim? Itaque, doloremque! Laboriosam quia libero fugiat sapiente, eligendi ex porro maxime beatae laudantium quibusdam, similique eius hic, quidem minus voluptas dolor. Facere cumque quasi id eum dolorum exercitationem mollitia, incidunt repellendus laudantium similique tenetur obcaecati atque quas vero esse nesciunt velit? Qui dolorum cumque nulla voluptatem possimus enim ratione sit reiciendis magnam molestiae rerum dolore, nihil, exercitationem fugiat rem, sint voluptas deserunt praesentium itaque unde voluptates repellendus pariatur! Tempora, corrupti? Voluptate accusamus ipsum perspiciatis officiis inventore saepe consectetur ratione deleniti ea, molestias, doloremque expedita ducimus officia ullam quam incidunt id iure sunt, eius velit maiores laborum. Neque architecto nostrum consequatur enim est?</p>
+      <div class="results">
+        
+        <div class="results-header">
+          <div class="cat-pic-container">
+            <img
+              class="cat-pic"
+              id="cat-img"
+              src=""
+              alt=""
+            />
+          </div>
+          <div class="title-header">
+            <h2 class="cat-reveal-title">Your cat match is...</h2>
+            <h2 class="cat-name" id="cat-name">name placeholder</h2>
+          </div>
         </div>
+        <p class="cat-description" id="cat-description">
+          Description placeholder Lorequibusdam ad sunt assumenda id et iure
+          impedit ipsam placeat hic nam ab, minima vero quasi repudiandae illum
+          quam unde. Reiciendis harum, vero assumenda quasi veritatis, dolores
+          impedit voluptatem corrupti doloremque sed dignissimos, nemo
+          repudiandae iste quibusdam.
+            </p>
+            <div class="results-buttons">
+                <button
+                  class="restart-btn"
+                  id="restart-btn"
+                  onclick="restart()"
+                >
+                  Restart Quiz
+                </button>
+      </div>
     </div>
-</body>
-    <script src="main.js"></script>
-    
+  </body>
+  <script src="main.js"></script>
 </html>
