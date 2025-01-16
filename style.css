@@ -386,6 +386,8 @@
     }
     .start-btn{
       width:150px;
+      height: 60px;
+      line-height: 0.8;
     }
     .quiz-info-card h2{
       margin-top: 0px;
