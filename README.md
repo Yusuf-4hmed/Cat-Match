@@ -8,7 +8,7 @@
 
 <a href="https://yusufahmed.info](https://yusuf-4hmed.github.io/Cat-Match/" target="_blank">Site Link</a>
 
-This project was the first thing I ever created. I have alot of big plans to showcase my skills via lots of creative interactive elements 
+Big plans for this site in the future :)
 
 Some things I am planning to add:
 - [x] Api integration for results
