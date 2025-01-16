@@ -210,6 +210,9 @@ const nextQuestion = () => {
   } else {
     resultsCard.classList.add("active");
     // RESULTS
+     confetti({
+      colors: [" #fff75e", "#ffe94e", "#ffda3d", "#fdc43f", "#fdb833"  ]
+     });
     if (score.calm > score.energetic && score.calm > score.affectionate) {
       result = 0;
       catName.innerText = `${match[0].breed}`;
