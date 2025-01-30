@@ -6,7 +6,7 @@
   </p>
 </div>
 
-<a href="https://yusufahmed.info](https://yusuf-4hmed.github.io/Cat-Match/" target="_blank">Site Link</a>
+<a href="https://yusuf-4hmed.github.io/Cat-Match/" target="_blank">Site Link</a>
 
 Big plans for this site in the future :)
 
