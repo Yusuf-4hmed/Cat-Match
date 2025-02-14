@@ -212,8 +212,10 @@
 }
 .question-header {
   font-size: 50px;
-  margin-top: 10px;
-  text-align: center;
+  margin: 20px auto;
+  line-height: 40px;
+  max-width: 614px;
+  padding: 0px 10px;
 }
 
 .option {
@@ -225,6 +227,7 @@
   margin-right: auto;
   padding: 5px;
   margin-bottom: 10px;
+  line-height: 30px;
 }
 
 .option:hover {
@@ -422,8 +425,8 @@
     .quiz{
       margin-top: 0px;
     }
-    .question-header{
-      margin-top: 0px;
+    .progress-bar-container {
+      margin: 10px 5px 0px;
     }
     .options{
       padding: 0px 10px;
