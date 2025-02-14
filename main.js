@@ -196,6 +196,7 @@ optionThree.addEventListener("click", () => {
 
 const nextQuestion = () => {
   saveScore();
+  adjustProgressBar();
   if (question < 4) {
     question++;
     optionOne.classList.remove("selected");
@@ -208,7 +209,12 @@ const nextQuestion = () => {
     optionTwo.innerHTML = `${questions[question].options[1].text}`;
     optionThree.innerHTML = `${questions[question].options[2].text}`;
   } else {
-    resultsCard.classList.add("active");
+    adjustProgressBar();
+    // ALLOWS 7 MILLISECONDS TO PASS SO THE PROGRESS BAR CAN PROGRESS
+    setTimeout(() => {
+      resultsCard.classList.add("active");
+    }, 700)
+    
     // RESULTS
      confetti({
       colors: [" #fff75e", "#ffe94e", "#ffda3d", "#fdc43f", "#fdb833"  ]
@@ -276,4 +282,16 @@ const nextQuestion = () => {
 
 const restart = () => {
     location.reload();
+}
+
+
+// QUIZ PROGRESS BAR
+
+const progressBar = document.getElementById("progress-bar");
+
+const adjustProgressBar = () => {
+  let questionPercentage = (question + 1) / 5 * 100 + "%";
+  progressBar.style.maxWidth = `${questionPercentage}`;
+  console.log(question);
+  console.log(questionPercentage);
 }

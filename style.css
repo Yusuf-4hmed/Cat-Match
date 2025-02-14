@@ -187,16 +187,32 @@
   display: initial;
 }
 
+/* QUIZ CARD, PROGRESS BAR */
+
+.progress-bar-container {
+  margin: 170px auto 0px;
+  max-width: 614px;
+}
+
+.progress-bar {
+  background-color: #fdb833;
+  height: 20px;
+  border-radius: 20px;
+  max-width: 0%;
+  left: 0;
+  transition: .5s;
+}
+
 /* QUIZ CARD, QUIZ */
 
 .quiz {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 200px;
+  margin-top: 10px;
 }
 .question-header {
   font-size: 50px;
-  margin-top: 200px;
+  margin-top: 10px;
   text-align: center;
 }
 
