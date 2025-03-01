@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Dongle&display=swap"
       rel="stylesheet"
     />
-    <title>Cat Match</title>
+    <title>Catmatch</title>
     <link rel="icon" href="./assets/cat-with-wry-smile_1f63c.png">
     <meta name="description" content="Ever wondered: whats the best cat for me? Take this quiz and find out!" />
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
@@ -24,9 +24,9 @@
       <div class="main-title">
         <h2>Find your perfect cat companion today!</h2>
       </div>
-      <button class="start-btn" id="start-btn" onclick="start()">
+      <a href="/methods.html"><button class="start-btn" id="start-btn" onclick="enterQuiz()">
         START HERE
-      </button>
+      </button></a>
     </main>
 
     <section class="reviews">
@@ -53,105 +53,6 @@
     </section>
 
 
-    <div class="quiz-info-card" id="quiz-info-card">
-      <div class="info-container">
-        <h2>Here are some things to keep in mind before you take this quiz:</h2>
-        <div class="info">
-          <ul>
-            <li>
-              <h3>Be Honest With Your Answers</h3>
-              Please answer as true to yourself as possible
-            </li>
-            <li>
-              <h3>It's all about you</h3>
-              Take your time there is no need to rush!
-            </li>
-            <li>
-              <h3>Remember results are for fun</h3>
-              While the quiz is designed for fun it can be insightful
-            </li>
-            <br />
-            <li>(also im still working on this site :p)</li>
-          </ul>
-        </div>
-
-        <div class="info-buttons">
-          <button class="nostart-btn" id="nostart-btn" onclick="noStart()">
-            Take me back
-          </button>
-          <button
-            class="start-quiz-btn"
-            id="start-quiz-btn"
-            onclick="enterQuiz()"
-          >
-            Start!
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="quiz-card" id="quiz-card">
-    
-      <div class="quiz">
-        <div class="progress-bar-container">
-          <div class="progress-bar" id="progress-bar"></div>
-        </div>
-        
-        <h2 class="question-header" id="question-header">
-          Question Placeholder
-        </h2>
-        <div class="options" id="options">
-          <div class="option">option placeholder</div>
-          <div class="option">option placeholder</div>
-          <div class="option">option placeholder</div>
-        </div>
-      </div>
-      <div class="quiz-buttons">
-        <button class="back-btn" id="back-btn">Back</button>
-        <button
-          class="next-btn disabled"
-          id="next-btn"
-          onclick="nextQuestion()"
-        >
-          Next
-        </button>
-      </div>
-    </div>
-
-    <div class="results-card" id="results-card">
-      <div class="results">
-        
-        <div class="results-header">
-          <div class="cat-pic-container">
-            <img
-              class="cat-pic"
-              id="cat-img"
-              src=""
-              alt=""
-            />
-          </div>
-          <div class="title-header">
-            <h2 class="cat-reveal-title">Your cat match is...</h2>
-            <h2 class="cat-name" id="cat-name">name placeholder</h2>
-          </div>
-        </div>
-        <p class="cat-description" id="cat-description">
-          Description placeholder Lorequibusdam ad sunt assumenda id et iure
-          impedit ipsam placeat hic nam ab, minima vero quasi repudiandae illum
-          quam unde. Reiciendis harum, vero assumenda quasi veritatis, dolores
-          impedit voluptatem corrupti doloremque sed dignissimos, nemo
-          repudiandae iste quibusdam.
-            </p>
-            <div class="results-buttons">
-                <button
-                  class="restart-btn"
-                  id="restart-btn"
-                  onclick="restart()"
-                >
-                  Restart Quiz
-                </button>
-      </div>
-    </div>
   </body>
   <script src="main.js"></script>
 </html>

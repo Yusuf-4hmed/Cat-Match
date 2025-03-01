@@ -133,7 +133,6 @@ let question = 0;
 
 // LET THE QUIZ BEGIN HEHE
 const enterQuiz = () => {
-  quizInfoCard.classList.remove("active");
   quizCard.classList.add("active");
   console.log(question);
   // SHOWS FIRST QUESTIONS IN OPTION
@@ -142,6 +141,8 @@ const enterQuiz = () => {
   optionTwo.innerHTML = `${questions[question].options[1].text}`;
   optionThree.innerHTML = `${questions[question].options[2].text}`;
 };
+
+enterQuiz()
 
 // VISUAL FEEDBACK FOR SELECTION ON OPTION
 
@@ -194,11 +195,14 @@ optionThree.addEventListener("click", () => {
 
 // NEXT QUESTION
 
+const questionNo = document.getElementById("question-no");
+
 const nextQuestion = () => {
   saveScore();
   adjustProgressBar();
   if (question < 4) {
     question++;
+    questionNo.innerText = question + 1;
     optionOne.classList.remove("selected");
     optionTwo.classList.remove("selected");
     optionThree.classList.remove("selected");
@@ -288,6 +292,7 @@ const restart = () => {
 // QUIZ PROGRESS BAR
 
 const progressBar = document.getElementById("progress-bar");
+
 
 const adjustProgressBar = () => {
   let questionPercentage = (question + 1) / 5 * 100 + "%";
