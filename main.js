@@ -1,7 +1,7 @@
 const startBtn = document.getElementById("start-btn");
 const nostartBtn = document.getElementById("nostart-btn");
 const nextBtn = document.getElementById("next-btn");
-
+const quizButtons = document.getElementById("quiz-buttons")
 // CARDS
 const quizInfoCard = document.getElementById("quiz-info-card");
 const quizCard = document.getElementById("quiz-card");
@@ -216,6 +216,7 @@ const nextQuestion = () => {
     adjustProgressBar();
     // ALLOWS 7 MILLISECONDS TO PASS SO THE PROGRESS BAR CAN PROGRESS
     setTimeout(() => {
+      quizButtons.style.display = ("none")
       resultsCard.classList.add("active");
     }, 700)
     
