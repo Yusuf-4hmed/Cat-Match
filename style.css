@@ -2,13 +2,43 @@
   font-family: "Dongle";
 }
 
+/* NAV */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.logo {
+  font-size: 47px;
+  font-weight: bolder;
+  color: #fdb833;
+  margin: 0px;
+}
+
+.nav-comingsoon {
+  font-size: 23px;
+  font-weight: bold;
+  color: rgb(185, 185, 185);
+  cursor: pointer;
+}
+
 /* MAIN */
+
+.main {
+  align-items: center;
+}
 
 .main-title {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 300px;
+  margin-top: 150px;
   text-align: center;
 }
 
@@ -16,27 +46,11 @@
   font-size: 70px;
   margin-bottom: 7px;
   cursor: default;
-}
-
-.main-title-second {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  max-width: 600px;
+  line-height: 60px;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
-  height: 50px;
-}
-
-.main-title-second h1 {
-  font-size: 130px;
-  cursor: default;
-}
-
-.main-title-second h3 {
-  font-size: 110px;
-  transform: rotate(20deg);
-  margin-left: 7px;
-  cursor: default;
 }
 
 /* MAIN, START BUTTON */
@@ -51,10 +65,10 @@
   border: 3px solid #fdb833;
   box-shadow: 0px 5px #fdb833;
   color: white;
-  font-size: 37px;
+  font-size: 33px;
   font-weight: 700;
 
-  width: 175px;
+  width: 300px;
   height: 55px;
   border-radius: 10px;
 }
@@ -62,6 +76,41 @@
   cursor: pointer;
   transform: translateY(3px);
   box-shadow: 0px 0px;
+}
+
+/* REVIEWS */
+.reviews {
+  margin-top: 200px;
+  display: flex;
+  gap: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  justify-content: center;
+}
+
+.review {
+  width: 230px;
+  line-height: 22px;
+}
+
+.stars {
+  color: rgb(255, 217, 0);
+  font-size: 40px;
+  text-align: center;
+}
+
+.review-text {
+  text-align: center;
+  font-family: sans-serif !important;
+  color: grey;
+}
+
+.review-person {
+  text-align: center;
+  font-family: sans-serif !important;
+  color: rgb(179, 179, 179);
+  margin-top: 10px;
 }
 
 /* QUIZ INFO CARD */
@@ -386,27 +435,30 @@
   }
 
 /* MEDIA QUERIES */
+  @media screen and (max-width: 900px){
+    .main-title {
+      margin-top: 100px;
+    }
+    .reviews {
+      flex-wrap: wrap;
+    }
+  }
 
   @media only screen and (max-width: 675px) {
+    .main-title {
+      margin-top: 50px;
+    }
     .main-title h2{
       font-size: 50px;
-      line-height: 0.5;
-    }
-    .main-title-second h1 {
-      font-size: 80px;
-      cursor: default;
-      line-height: 0.5;
-    }
-    .main-title-second h3 {
-      font-size: 110px;
-      transform: rotate(20deg);
-      margin-left: 7px;
-      cursor: default;
+      line-height: 40px;
     }
     .start-btn{
-      width:150px;
+      
       height: 60px;
       line-height: 0.8;
+    }
+    .reviews {
+      margin-top: 100px;
     }
     .quiz-info-card h2{
       margin-top: 0px;

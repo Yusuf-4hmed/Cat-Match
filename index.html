@@ -16,18 +16,42 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
   </head>
   <body>
-    <div class="main">
+    <nav>
+      <p class="logo">Catmatch</p>
+      <p class="nav-comingsoon">APP COMING SOON</p>
+    </nav>
+    <main class="main">
       <div class="main-title">
-        <h2>What's the perfect</h2>
-        <div class="main-title-second">
-          <h1>Cat for me</h1>
-          <h3>?</h3>
-        </div>
+        <h2>Find your perfect cat companion today!</h2>
       </div>
       <button class="start-btn" id="start-btn" onclick="start()">
-        Let's find out
+        START HERE
       </button>
-    </div>
+    </main>
+
+    <section class="reviews">
+      <article class="review">
+        <div class="stars">★★★★★</div>
+        <div class="review-text">Like how it explains WHY it matched you to a cat</div>
+        <div class="review-person">Albert Einstein</div>
+      </article>
+      <article class="review">
+        <div class="stars">★★★★★</div>
+        <div class="review-text">If your thinking about getting a cat, use this!</div>
+        <div class="review-person">Peter Parker</div>
+      </article>
+      <article class="review">
+        <div class="stars">★★★★★</div>
+        <div class="review-text">I got my kitten after using this, she's a match</div>
+        <div class="review-person">Bruce Wayne</div>
+      </article>
+      <article class="review">
+        <div class="stars">★★★★★</div>
+        <div class="review-text">Great app! It's a shame my bro is afraid of cats.</div>
+        <div class="review-person">Mario</div>
+      </article>
+    </section>
+
 
     <div class="quiz-info-card" id="quiz-info-card">
       <div class="info-container">
@@ -67,7 +91,7 @@
     </div>
 
     <div class="quiz-card" id="quiz-card">
-      
+    
       <div class="quiz">
         <div class="progress-bar-container">
           <div class="progress-bar" id="progress-bar"></div>
