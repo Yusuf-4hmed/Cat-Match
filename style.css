@@ -639,6 +639,7 @@ nav {
       margin-top: 0px;
       font-size: 25px;
       line-height: 20px;
+      margin-bottom: 35%;
     }
     .restart-btn{
       width:150px;
@@ -651,5 +652,8 @@ nav {
     .restart-a {
       justify-content: center;
       padding: 0px;
+    }
+    .results-buttons {
+      position: static;
     }
   }

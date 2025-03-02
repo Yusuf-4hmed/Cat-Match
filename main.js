@@ -218,7 +218,7 @@ const nextQuestion = () => {
     setTimeout(() => {
       quizButtons.style.display = ("none");
       resultsCard.classList.add("active");
-      document.body.style.overflow = ("auto");
+      document.body.style.overflow = "auto";
     }, 700)
     
     // RESULTS
