@@ -650,5 +650,6 @@ nav {
     }
     .restart-a {
       justify-content: center;
+      padding: 0px;
     }
   }
