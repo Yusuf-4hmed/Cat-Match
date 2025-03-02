@@ -126,6 +126,35 @@ nav {
   margin-top: 10px;
 }
 
+.secondary-title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  text-align: center;
+  max-width: 400px;
+  margin-bottom: 100px;
+}
+
+.secondary-title h3 {
+  font-size: 60px;
+  margin-bottom: 7px;
+  cursor: default;
+  max-width: 600px;
+  line-height: 60px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fdb833;
+}
+
+.secondary-text {
+  text-align: center;
+  font-family: sans-serif !important;
+  color: grey;
+  line-height: 30px;
+}
+
 /* QUIZ CARD*/
 
 .quiz-card {
