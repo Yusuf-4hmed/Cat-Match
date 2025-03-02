@@ -216,8 +216,9 @@ const nextQuestion = () => {
     adjustProgressBar();
     // ALLOWS 7 MILLISECONDS TO PASS SO THE PROGRESS BAR CAN PROGRESS
     setTimeout(() => {
-      quizButtons.style.display = ("none")
+      quizButtons.style.display = ("none");
       resultsCard.classList.add("active");
+      document.body.style.overflow = ("auto");
     }, 700)
     
     // RESULTS
