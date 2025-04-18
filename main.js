@@ -33,13 +33,13 @@ let questions = [
     number: 1,
     question: "What's your ideal weekend activity?",
     options: [
-      { text: "A. Staying home and watching a movie", type: "calm" },
+      { text: "A) Staying home and watching a movie", type: "calm" },
       {
-        text: "B. Going out to eat, exploring or going for a walk",
+        text: "B) Going out to eat, exploring or going for a walk",
         type: "energetic",
       },
       {
-        text: "C. Spending time with friends and family",
+        text: "C) Spending time with friends and family",
         type: "affectionate",
       },
     ],
@@ -49,14 +49,14 @@ let questions = [
     question: "How do you prefer to spend your weekday evenings?",
     options: [
       {
-        text: "A. Relaxing with a good meal and some quiet time",
+        text: "A) Relaxing with a good meal and some quiet time",
         type: "calm",
       },
       {
-        text: "B. Going to the gym or doing something active",
+        text: "B) Going to the gym or doing something active",
         type: "energetic",
       },
-      { text: "C. Meeting new people", type: "affectionate" },
+      { text: "C) Meeting new people", type: "affectionate" },
     ],
   },
   {
@@ -64,12 +64,12 @@ let questions = [
     question: "How do you handle new situations or challenges?",
     options: [
       {
-        text: "A. I take a step back and assess things carefully",
+        text: "A) I take a step back and assess things carefully",
         type: "calm",
       },
-      { text: "B. I jump right in and tackle it head-on", type: "energetic" },
+      { text: "B) I jump right in and tackle it head-on", type: "energetic" },
       {
-        text: "C. I seek advice from friends and make a collaborative decision",
+        text: "C) I seek advice from friends and make a collaborative decision",
         type: "affectionate",
       },
     ],
@@ -78,10 +78,10 @@ let questions = [
     number: 4,
     question: "Where do you like to go?",
     options: [
-      { text: "A. In my bed", type: "calm" },
-      { text: "B. Travelling the world", type: "energetic" },
+      { text: "A) In my bed", type: "calm" },
+      { text: "B) Travelling the world", type: "energetic" },
       {
-        text: "C. Anywhere as long as I'm with my friends",
+        text: "C) Anywhere as long as I'm with my friends",
         type: "affectionate",
       },
     ],
@@ -90,9 +90,9 @@ let questions = [
     number: 5,
     question: "What cat sounds the best to you?",
     options: [
-      { text: "A. Just a chill dude", type: "calm" },
-      { text: "B. Crazy", type: "energetic" },
-      { text: "C. Always purring on you", type: "affectionate" },
+      { text: "A) Just a chill dude", type: "calm" },
+      { text: "B) Crazy", type: "energetic" },
+      { text: "C) Always purring on you", type: "affectionate" },
     ],
   },
 ];
