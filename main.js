@@ -202,7 +202,7 @@ const nextQuestion = () => {
   adjustProgressBar();
   if (question < 4) {
     question++;
-    questionNo.innerText = question + 1;
+    questionNo.innerText = `${question + 1} / 5`;
     optionOne.classList.remove("selected");
     optionTwo.classList.remove("selected");
     optionThree.classList.remove("selected");
