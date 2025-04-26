@@ -298,7 +298,7 @@ const progressBar = document.getElementById("progress-bar");
 
 const adjustProgressBar = () => {
   let questionPercentage = (question + 1) / 5 * 100 + "%";
-  progressBar.style.maxWidth = `${questionPercentage}`;
+  progressBar.style.width = `${questionPercentage}`;
   console.log(question);
   console.log(questionPercentage);
 }
