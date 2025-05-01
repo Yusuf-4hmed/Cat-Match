@@ -341,6 +341,11 @@ nav {
   padding-top: 10px;
 }
 
+.next-btn p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .next-btn:hover {
   cursor: pointer;
   transform: translateY(3px);
@@ -363,7 +368,7 @@ nav {
   display: none;
   position: absolute;
   z-index: 2;
-  background-color: white;
+  background-color: #FFF9E4;
   top: 0;
   left: 0;
   width: 100%;
@@ -400,9 +405,9 @@ nav {
   align-items: center;
   max-width: 230px;
   height: 230px;
-  border-radius: 10px;
-  border: 3px solid #fdb833;
-  box-shadow: 0px 5px #fdb833;
+  border-radius: 5px;
+  border: 3px solid #571530;
+  box-shadow: 0px 5px #571530;
 }
 
 .title-header {
@@ -410,26 +415,30 @@ nav {
 }
 
 .cat-reveal-title {
-  font-size: 45px;
-  margin: 2px 2px 2px 2px;
+  font-size: 35px;
+  font-weight: 600;
+  margin: 10px 2px 10px;
   line-height: 30px;
 }
 
 .cat-name {
-  font-size: 90px;
+  font-size: 60px;
   line-height: 0.7;
   margin: 3px 3px 3px 3px;
-  color: #fdb833;
+  color: #43DD65;
+  /* border: 3px solid #0D2B14; */
+  /* text-shadow: 0px 5px #0D2B14; */
 }
 
 .cat-description {
   font-size: 35px;
+  font-weight: 200;
   margin-bottom: 0px;
   line-height: 30px;
-  border: 3px solid #fdb833;
-  box-shadow: 0px 5px #fdb833;
-  border-radius: 10px;
-  padding: 4px;
+  border: 3px solid #102940;
+  box-shadow: 0px 5px #102940;
+  border-radius: 5px;
+  padding: 20px;
   margin: 10px 20px 0px;
 }
 
@@ -453,7 +462,7 @@ nav {
   display: flex;
   width: 100%;
   align-self: center;
-  justify-content: end;
+  justify-content: center;
   padding-right: 20px;
 }
 
@@ -686,7 +695,7 @@ nav {
       align-self: flex-start;
     }
     .cat-reveal-title {
-      font-size: 40px;
+      font-size: 30px;
     }
     .cat-name {
       font-size: 60px;
@@ -711,6 +720,6 @@ nav {
       padding: 0px;
     }
     .results-buttons {
-      position: static;
+      /* position: static; */
     }
   }
